@@ -41,16 +41,17 @@ def game():
     rule()
     n = 0
     while n < 3:
-        correct_answer = is_number()
-        answer = your_answer()
-        if str(answer) == str(correct_answer):
+        corr_ans = is_number()
+        ans = your_answer()
+        if str(ans) == str(corr_ans):
             print('Correct!')
             n += 1
             continue
-        elif str(answer) != str(correct_answer):
+        elif str(ans) != str(corr_ans):
             print(
-                f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!"
+                f"'{ans}' is wrong answer ;(. Correct answer was '{corr_ans}'."
                 )
+            print(f"Let's try again, {name}!")
             break
     if n == 3:
         print(f'Congratulations, {name}!')

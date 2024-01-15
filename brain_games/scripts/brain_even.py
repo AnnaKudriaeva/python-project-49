@@ -45,14 +45,12 @@ def game():
             n += 1
             continue
         elif (answer == 'yes' and number % 2 != 0):
-            print(
-                f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!"
-                )
+            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+            print(f"Let's try again, {name}!")
             break
         elif (answer == 'no' and number % 2 == 0):
-            print(
-                f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!"
-                )
+            print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+            print(f"Let's try again, {name}!")
             break
         else:
             print(f"'{answer}' is wrong answer ;(.\nLet's try again, {name}!")
