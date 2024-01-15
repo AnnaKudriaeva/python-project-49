@@ -38,7 +38,7 @@ def game():
         answer = your_answer()
         if (
             answer == 'yes' and number % 2 == 0
-            ) or (
+        ) or (
                 answer == 'no' and number % 2 != 0
         ):
             print('Correct!')
