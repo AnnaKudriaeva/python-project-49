@@ -48,7 +48,7 @@ def game():
         elif str(ans) != str(corr_ans):
             print(
                 f"'{ans}'is wrong answer ;(. Correct answer was '{corr_ans}'."
-                )
+            )
             print(f"Let's try again, {name}!")
             break
     if n == 3:

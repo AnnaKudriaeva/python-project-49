@@ -40,7 +40,7 @@ def game():
             answer == 'yes' and number % 2 == 0
             ) or (
                 answer == 'no' and number % 2 != 0
-                ):
+        ):
             print('Correct!')
             n += 1
             continue
