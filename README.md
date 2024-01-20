@@ -26,7 +26,8 @@ make build
 ```
 make package-install
 ```
-4. Записк игр
+4. Запуск игр 
+
 Brain-Even (Проверка на четность)
 ```
 make brain-even
