@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from brain_games.engine import game
-from brain_games.games.brain_prime import is_number
+from brain_games.games.prime import is_number
 
 
 def main():
