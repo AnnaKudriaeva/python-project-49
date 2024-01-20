@@ -1,3 +1,4 @@
+from brain_games.cli import welcome_user
 import prompt
 
 
@@ -6,12 +7,6 @@ NUMBER_OF_ATTEMPTS = 3
 
 def greet():
     print('Welcome to the Brain Games!')
-
-
-def welcome_user():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
 
 
 def rule():
@@ -24,6 +19,7 @@ def your_answer():
 
 
 def game(is_number):
+    greet()
     name = welcome_user()
     rule()
     n = 0

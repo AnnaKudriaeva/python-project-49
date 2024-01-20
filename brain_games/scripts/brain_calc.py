@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-from brain_games.engine import game, greet
+from brain_games.engine import game
 from brain_games.games.brain_calc import is_number
 
 
 def main():
-    greet()
     game(is_number)
 
 
