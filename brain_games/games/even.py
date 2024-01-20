@@ -15,5 +15,6 @@ def is_number():
         correct_answer = 'no'
     return correct_answer
 
+
 def run_game_even():
     game(rule, is_number)

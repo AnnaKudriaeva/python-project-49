@@ -20,5 +20,6 @@ def is_number():
     print(f'Question: {number}')
     return correct_answer
 
+
 def run_game_prime():
     game(rule, is_number)

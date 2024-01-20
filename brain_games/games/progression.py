@@ -18,5 +18,6 @@ def is_number():
     print(f'Question: {progression}')
     return replaced_number
 
+
 def run_game_progression():
     game(rule, is_number)

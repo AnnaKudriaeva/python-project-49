@@ -17,5 +17,6 @@ def is_number():
     print(f'Question: {expression}')
     return correct_answer
 
+
 def run_game_calc():
     game(rule, is_number)
