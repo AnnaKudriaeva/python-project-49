@@ -9,16 +9,12 @@ def greet():
     print('Welcome to the Brain Games!')
 
 
-def rule():
-    print('What is the result of the expression?')
-
-
 def your_answer():
     answer = prompt.string('Your answer: ')
     return answer
 
 
-def game(is_number):
+def game(rule, is_number):
     greet()
     name = welcome_user()
     rule()

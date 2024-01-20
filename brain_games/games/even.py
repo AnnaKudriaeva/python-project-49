@@ -1,6 +1,10 @@
 import random
 
 
+def rule():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
 def is_number():
     number = random.randint(2, 100)
     print(f'Question: {number}')

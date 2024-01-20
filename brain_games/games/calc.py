@@ -3,6 +3,10 @@
 import random
 
 
+def rule():
+    print('What is the result of the expression?')
+
+    
 def is_number():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)

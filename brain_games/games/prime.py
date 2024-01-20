@@ -1,6 +1,10 @@
 import random
 
 
+def rule():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+
 def is_number():
     number = random.randint(2, 100)
     is_prime = True
