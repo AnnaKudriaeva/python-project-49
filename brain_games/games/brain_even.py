@@ -2,7 +2,7 @@ import random
 
 
 def is_number():
-    number = random.randint(1, 100)
+    number = random.randint(2, 100)
     print(f'Question: {number}')
     if number % 2 == 0:
         correct_answer = 'yes'

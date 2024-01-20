@@ -3,6 +3,7 @@ import prompt
 
 NUMBER_OF_ATTEMPTS = 3
 
+
 def greet():
     print('Welcome to the Brain Games!')
 
@@ -28,13 +29,13 @@ def game(is_number):
     n = 0
     while n < NUMBER_OF_ATTEMPTS:
         correct_answer = is_number()
-        ans = your_answer()
-        if str(ans) == str(correct_answer):
+        answer = your_answer()
+        if str(answer) == str(correct_answer):
             print('Correct!')
             n += 1
-        elif str(ans) != str(correct_answer):
+        elif str(answer) != str(correct_answer):
             print(
-                f"'{ans}'is wrong answer ;(. "
+                f"'{answer}'is wrong answer ;(. "
                 f"Correct answer was '{correct_answer}'."
             )
             print(f"Let's try again, {name}!")
