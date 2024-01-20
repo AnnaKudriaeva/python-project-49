@@ -1,6 +1,10 @@
 import random
 
 
+def rule():
+    print('What number is missing in the progression?')
+
+
 def is_number():
     start_value = random.randint(1, 10)
     difference = random.randint(1, 5)
