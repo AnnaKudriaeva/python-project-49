@@ -1,3 +1,4 @@
+from brain_games.engine import game
 import random
 
 
@@ -26,3 +27,6 @@ def is_number():
         else:
             number = number - 1
     return correct_answer
+
+def run_game_gcd():
+    game(rule, is_number)

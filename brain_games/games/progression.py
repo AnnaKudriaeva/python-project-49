@@ -1,3 +1,4 @@
+from brain_games.engine import game
 import random
 
 
@@ -16,3 +17,6 @@ def is_number():
     progression = ' '.join(map(str, progression))
     print(f'Question: {progression}')
     return replaced_number
+
+def run_game_progression():
+    game(rule, is_number)

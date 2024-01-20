@@ -1,3 +1,4 @@
+from brain_games.engine import game
 import random
 
 
@@ -13,3 +14,6 @@ def is_number():
     else:
         correct_answer = 'no'
     return correct_answer
+
+def run_game_even():
+    game(rule, is_number)

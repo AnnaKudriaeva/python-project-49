@@ -1,3 +1,4 @@
+from brain_games.engine import game
 import random
 
 
@@ -18,3 +19,6 @@ def is_number():
         correct_answer = 'no'
     print(f'Question: {number}')
     return correct_answer
+
+def run_game_prime():
+    game(rule, is_number)

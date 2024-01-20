@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-
-from brain_games.engine import game
-from brain_games.games.prime import is_number, rule
+from brain_games.games.calc import run_game_prime
 
 
 def main():
-    game(rule, is_number)
+    run_game_prime()
 
 
 if __name__ == '__main__':

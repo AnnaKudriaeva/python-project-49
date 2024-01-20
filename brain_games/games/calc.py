@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+from brain_games.engine import game
 import random
 
 
@@ -16,3 +16,6 @@ def is_number():
     correct_answer = eval(expression)
     print(f'Question: {expression}')
     return correct_answer
+
+def run_game_calc():
+    game(rule, is_number)
