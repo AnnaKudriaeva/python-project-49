@@ -1,33 +1,25 @@
-from brain_games.cli import welcome_user
 import prompt
 
 
 NUMBER_OF_ATTEMPTS = 3
 
 
-def greet():
+def game(rule, question_and_answer):
     print('Welcome to the Brain Games!')
-
-
-def your_answer():
-    answer = prompt.string('Your answer: ')
-    return answer
-
-
-def game(rule, is_number):
-    greet()
-    name = welcome_user()
-    rule()
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    print(rule)
     n = 0
     while n < NUMBER_OF_ATTEMPTS:
-        correct_answer = is_number()
-        answer = your_answer()
-        if str(answer) == str(correct_answer):
+        question, correct_answer = question_and_answer()
+        print(f'Question: {question}')
+        user_answer = prompt.string('Your answer: ')
+        if str(user_answer) == str(correct_answer):
             print('Correct!')
             n += 1
-        elif str(answer) != str(correct_answer):
+        elif str(user_answer) != str(correct_answer):
             print(
-                f"'{answer}'is wrong answer ;(. "
+                f"'{user_answer}'is wrong answer ;(. "
                 f"Correct answer was '{correct_answer}'."
             )
             print(f"Let's try again, {name}!")

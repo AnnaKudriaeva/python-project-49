@@ -1,21 +1,13 @@
-from brain_games.engine import game
 import random
 
 
-def rule():
-    print('Find the greatest common divisor of given numbers.')
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
-def random_numbers():
+def question_and_answer():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
-    expression = f'{number1} {number2}'
-    print(f'Question: {expression}')
-    return number1, number2
-
-
-def is_number():
-    number1, number2 = random_numbers()
+    question = f'{number1} {number2}'
     number = min(number1, number2)
     while number > 0:
         if number1 % number == 0 and number2 % number == 0:
@@ -23,8 +15,4 @@ def is_number():
             break
         else:
             number = number - 1
-    return correct_answer
-
-
-def run_game_gcd():
-    game(rule, is_number)
+    return question, correct_answer

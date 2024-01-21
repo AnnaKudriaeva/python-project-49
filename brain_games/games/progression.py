@@ -1,23 +1,16 @@
-from brain_games.engine import game
 import random
 
 
-def rule():
-    print('What number is missing in the progression?')
+RULE = 'What number is missing in the progression?'
 
 
-def is_number():
+def question_and_answer():
     start_value = random.randint(1, 10)
     difference = random.randint(1, 5)
     num_elements = 10
     progression = [start_value + i * difference for i in range(num_elements)]
     index_to_replace = random.randint(0, len(progression) - 1)
-    replaced_number = progression[index_to_replace]
+    correct_answer = progression[index_to_replace]
     progression[index_to_replace] = '..'
-    progression = ' '.join(map(str, progression))
-    print(f'Question: {progression}')
-    return replaced_number
-
-
-def run_game_progression():
-    game(rule, is_number)
+    question = ' '.join(map(str, progression))
+    return question, correct_answer
