@@ -14,7 +14,7 @@ def get_gcd(number1, number2, number):
     return answer
 
 
-def question_and_answer():
+def get_question_and_answer():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
     question = f'{number1} {number2}'

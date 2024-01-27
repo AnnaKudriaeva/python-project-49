@@ -17,7 +17,7 @@ def is_prime(question):
     return answer
 
 
-def question_and_answer():
+def get_question_and_answer():
     question = random.randint(2, 100)
     correct_answer = is_prime(question)
     return question, correct_answer
