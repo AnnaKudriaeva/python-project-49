@@ -3,6 +3,7 @@ import random
 
 RULE = 'What is the result of the expression?'
 
+
 def get_calc(number1, number2, chosen_operator):
     if chosen_operator == '+':
         answer = number1 + number2

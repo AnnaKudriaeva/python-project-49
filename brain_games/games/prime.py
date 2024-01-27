@@ -18,6 +18,6 @@ def is_prime(question):
 
 
 def question_and_answer():
-    question = random.randint(2, 100)   
+    question = random.randint(2, 100)
     correct_answer = is_prime(question)
     return question, correct_answer
